@@ -1,0 +1,866 @@
+VERSION 5.00
+Begin VB.PropertyPage PropertyPage1 
+   Caption         =   "Display Matrix Properties"
+   ClientHeight    =   4260
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   3975
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4260
+   ScaleWidth      =   3975
+   Begin VB.CheckBox chkAutoHeight 
+      Caption         =   "AutoHeight"
+      Height          =   195
+      Left            =   2760
+      TabIndex        =   47
+      Top             =   780
+      Width           =   1095
+   End
+   Begin VB.ComboBox cboSizeY 
+      Height          =   315
+      Left            =   1980
+      Style           =   2  'Dropdown List
+      TabIndex        =   43
+      Top             =   720
+      Width           =   735
+   End
+   Begin VB.PictureBox Picture1 
+      AutoSize        =   -1  'True
+      BorderStyle     =   0  'None
+      Height          =   4065
+      Left            =   60
+      Picture         =   "PropertyPage1.pgx":0000
+      ScaleHeight     =   4065
+      ScaleWidth      =   315
+      TabIndex        =   42
+      Top             =   120
+      Width           =   315
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Sample 1 (No Font Change. Only Colors)"
+      Height          =   1575
+      Left            =   540
+      TabIndex        =   10
+      Top             =   2580
+      Width           =   3315
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   20
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   41
+         Top             =   1260
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   19
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   40
+         Top             =   1260
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   18
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   39
+         Top             =   1080
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   17
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   38
+         Top             =   1080
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   16
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   37
+         Top             =   1080
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   15
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   36
+         Top             =   1080
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   14
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   35
+         Top             =   900
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   13
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   34
+         Top             =   900
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   12
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   33
+         Top             =   900
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   11
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   32
+         Top             =   900
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   10
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   31
+         Top             =   720
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   8
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   30
+         Top             =   720
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   7
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   29
+         Top             =   540
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   6
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   28
+         Top             =   540
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   5
+         Left            =   900
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   27
+         Top             =   360
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   4
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   26
+         Top             =   360
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   3
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   25
+         Top             =   720
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   2
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   24
+         Top             =   720
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   1
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   23
+         Top             =   540
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   0
+         Left            =   180
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   22
+         Top             =   360
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsOFF 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00008000&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   9
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   21
+         Top             =   360
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   8
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   20
+         Top             =   540
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   7
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   19
+         Top             =   360
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   6
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   18
+         Top             =   540
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   5
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   17
+         Top             =   720
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   4
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   16
+         Top             =   900
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   3
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   15
+         Top             =   1080
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   2
+         Left            =   720
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   14
+         Top             =   1260
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   1
+         Left            =   540
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   13
+         Top             =   1260
+         Width           =   120
+      End
+      Begin VB.PictureBox PicDotsON 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H0080FF80&
+         BorderStyle     =   0  'None
+         Height          =   120
+         Index           =   0
+         Left            =   360
+         ScaleHeight     =   8
+         ScaleMode       =   3  'Píxel
+         ScaleWidth      =   8
+         TabIndex        =   12
+         Top             =   1260
+         Width           =   120
+      End
+      Begin VB.Label lblDisplayBackColor 
+         BackColor       =   &H00000000&
+         Height          =   1155
+         Left            =   120
+         TabIndex        =   11
+         Top             =   300
+         Width           =   975
+      End
+   End
+   Begin VB.ComboBox cboDisplayBackColor 
+      Height          =   315
+      Left            =   1380
+      Style           =   2  'Dropdown List
+      TabIndex        =   9
+      Top             =   2160
+      Width           =   2475
+   End
+   Begin VB.ComboBox cboBackColor 
+      Height          =   315
+      Left            =   1380
+      Style           =   2  'Dropdown List
+      TabIndex        =   7
+      Top             =   1560
+      Width           =   2475
+   End
+   Begin VB.ComboBox cboForeColor 
+      Height          =   315
+      Left            =   1380
+      Style           =   2  'Dropdown List
+      TabIndex        =   5
+      Top             =   1140
+      Width           =   2475
+   End
+   Begin VB.ComboBox cboSize 
+      Height          =   315
+      Left            =   1020
+      Style           =   2  'Dropdown List
+      TabIndex        =   3
+      Top             =   720
+      Width           =   735
+   End
+   Begin VB.ComboBox cboFont 
+      Height          =   315
+      Left            =   1020
+      Style           =   2  'Dropdown List
+      TabIndex        =   0
+      Top             =   120
+      Width           =   2835
+   End
+   Begin VB.Label Label8 
+      Caption         =   "Height"
+      Height          =   195
+      Left            =   1980
+      TabIndex        =   46
+      Top             =   480
+      Width           =   675
+   End
+   Begin VB.Label Label7 
+      Caption         =   "Width"
+      Height          =   195
+      Left            =   1020
+      TabIndex        =   45
+      Top             =   480
+      Width           =   495
+   End
+   Begin VB.Label Label6 
+      Alignment       =   2  'Center
+      Caption         =   "x"
+      Height          =   255
+      Left            =   1740
+      TabIndex        =   44
+      Top             =   780
+      Width           =   195
+   End
+   Begin VB.Label Label5 
+      Caption         =   "Display BackColor:"
+      Height          =   435
+      Left            =   540
+      TabIndex        =   8
+      Top             =   2040
+      Width           =   795
+   End
+   Begin VB.Label Label4 
+      Caption         =   "BackColor:"
+      Height          =   255
+      Left            =   540
+      TabIndex        =   6
+      Top             =   1620
+      Width           =   795
+   End
+   Begin VB.Label Label3 
+      Caption         =   "ForeColor:"
+      Height          =   255
+      Left            =   540
+      TabIndex        =   4
+      Top             =   1200
+      Width           =   795
+   End
+   Begin VB.Label Label2 
+      Caption         =   "Size:"
+      Height          =   255
+      Left            =   540
+      TabIndex        =   2
+      Top             =   780
+      Width           =   435
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Font:"
+      Height          =   255
+      Left            =   540
+      TabIndex        =   1
+      Top             =   180
+      Width           =   435
+   End
+End
+Attribute VB_Name = "PropertyPage1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+
+Private Function ReturnFontName(pFont As eFonts) As String
+    Select Case pFont
+        Case eFonts.NormalPixel_5x7
+            ReturnFontName = "Normal Pixel 5x7"
+        Case eFonts.OutLand9x7
+            ReturnFontName = "OutLand 9x7"
+        Case eFonts.DPComic10x14
+            ReturnFontName = "DPComic 10x14"
+    End Select
+End Function
+Private Function ReturnColorName(pColor As eMatrixColor) As String
+    Select Case pColor
+        Case eMatrixColor.Black
+            ReturnColorName = "Black"
+        Case eMatrixColor.Blue
+            ReturnColorName = "Blue"
+        Case eMatrixColor.GreenDark
+            ReturnColorName = "GreenDark"
+        Case eMatrixColor.GreenLight
+            ReturnColorName = "GreenLight"
+        Case eMatrixColor.NavyDark
+            ReturnColorName = "NavyDark"
+        Case eMatrixColor.NavyLight
+            ReturnColorName = "NavyLight"
+        Case eMatrixColor.OliveDark
+            ReturnColorName = "OliveDark"
+        Case eMatrixColor.OliveLight
+            ReturnColorName = "OliveLight"
+        Case eMatrixColor.OliveSuperDark
+            ReturnColorName = "OliveSuperDark"
+        Case eMatrixColor.OrangeDark
+            ReturnColorName = "OrangeDark"
+        Case eMatrixColor.OrangeLight
+            ReturnColorName = "OrangeLight"
+        Case eMatrixColor.Red
+            ReturnColorName = "Red"
+        Case eMatrixColor.White
+            ReturnColorName = "White"
+        Case eMatrixColor.Yellow
+            ReturnColorName = "Yellow"
+    End Select
+End Function
+
+Private Sub cboBackColor_Change()
+Changed = True
+End Sub
+
+Private Sub cboBackColor_Click()
+Dim i As Integer
+Dim color As Long
+    Changed = True
+    color = ReturnColor(cboBackColor.ItemData(cboBackColor.ListIndex))
+    For i = 0 To PicDotsOFF.Count - 1
+        PicDotsOFF(i).BackColor = color
+    Next i
+End Sub
+
+Private Sub cboDisplayBackColor_Change()
+Changed = True
+End Sub
+
+Private Sub cboDisplayBackColor_Click()
+Dim i As Integer
+Dim color As Long
+    Changed = True
+    color = ReturnColor(cboDisplayBackColor.ItemData(cboDisplayBackColor.ListIndex))
+    lblDisplayBackColor.BackColor = color
+End Sub
+
+Private Sub cboFont_Change()
+    Changed = True
+End Sub
+
+Private Sub cboFont_Click()
+    Changed = True
+End Sub
+
+Private Sub cboForeColor_Change()
+Changed = True
+End Sub
+
+Private Sub cboForeColor_Click()
+Dim i As Integer
+Dim color As Long
+    Changed = True
+    color = ReturnColor(cboForeColor.ItemData(cboForeColor.ListIndex))
+    For i = 0 To PicDotsON.Count - 1
+        PicDotsON(i).BackColor = color
+    Next i
+End Sub
+
+Private Sub cboSize_Change()
+Changed = True
+End Sub
+
+Private Sub cboSize_Click()
+Changed = True
+End Sub
+Private Function ReturnColor(pColor As eMatrixColor) As Long
+    Select Case pColor
+        Case eMatrixColor.Black
+            ReturnColor = vbBlack
+        Case eMatrixColor.OliveDark
+            ReturnColor = RGB(148, 157, 64)
+        Case eMatrixColor.OliveSuperDark
+            ReturnColor = RGB(84, 91, 34)
+        Case eMatrixColor.OliveLight
+            ReturnColor = RGB(164, 176, 70)
+        Case eMatrixColor.NavyDark
+            ReturnColor = RGB(87, 146, 210)
+        Case eMatrixColor.NavyLight
+            ReturnColor = RGB(101, 167, 216)
+        Case eMatrixColor.OrangeDark
+            ReturnColor = RGB(213, 128, 0)
+        Case eMatrixColor.OrangeLight
+            ReturnColor = RGB(255, 157, 38)
+        Case eMatrixColor.GreenDark
+            ReturnColor = RGB(0, 83, 0)
+        Case eMatrixColor.GreenLight
+            ReturnColor = vbGreen
+        Case eMatrixColor.White
+            ReturnColor = vbWhite
+        Case eMatrixColor.Yellow
+            ReturnColor = vbYellow
+        Case eMatrixColor.Red
+            ReturnColor = vbRed
+        Case eMatrixColor.Blue
+            ReturnColor = vbBlue
+    End Select
+End Function
+
+
+
+Private Sub cboSizeY_Change()
+Changed = True
+End Sub
+
+Private Sub cboSizeY_Click()
+Changed = True
+End Sub
+
+Private Sub chkAutoHeight_Click()
+Changed = True
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+Dim i As Integer
+    For i = 0 To SelectedControls.Count - 1
+        If cboFont.DataChanged Then
+            SelectedControls(i).MtxFont = cboFont.ItemData(cboFont.ListIndex)
+            
+        End If
+        If cboSize.DataChanged Then
+            SelectedControls(i).MtxDotWidth = cboSize.ItemData(cboSize.ListIndex)
+        End If
+        If cboSizeY.DataChanged Then
+            SelectedControls(i).MtxDotHeight = cboSizeY.ItemData(cboSizeY.ListIndex)
+        End If
+        If cboForeColor.DataChanged Then
+            SelectedControls(i).MtxForeColor = cboForeColor.ItemData(cboForeColor.ListIndex)
+        End If
+        If cboBackColor.DataChanged Then
+            SelectedControls(i).MtxBackColor = cboBackColor.ItemData(cboBackColor.ListIndex)
+        End If
+        If cboDisplayBackColor.DataChanged Then
+            SelectedControls(i).MtxDisplayBackColor = cboDisplayBackColor.ItemData(cboDisplayBackColor.ListIndex)
+        End If
+    
+        If chkAutoHeight.DataChanged = True Then
+            If chkAutoHeight.Value = vbChecked Then
+                SelectedControls(i).MtxAutoAjustHeight = True
+            Else
+                SelectedControls(i).MtxAutoAjustHeight = False
+            End If
+            
+        End If
+    Next i
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+Dim iFonts As eFonts
+Dim iSize As eDotSize
+Dim iColor As eMatrixColor
+Dim color As Long
+Dim i As Integer
+    Refresh
+    
+    cboFont.Clear
+    cboSize.Clear
+    cboSizeY.Clear
+    cboForeColor.Clear
+    cboBackColor.Clear
+    cboDisplayBackColor.Clear
+    For iFonts = 0 To eFonts.DPComic10x14
+        cboFont.AddItem ReturnFontName(iFonts)
+        cboFont.ItemData(cboFont.NewIndex) = iFonts
+    Next iFonts
+    
+    For iSize = eDotSize.Size1Pix To eDotSize.Size10Pix
+        cboSize.AddItem iSize & "Pix"
+        cboSize.ItemData(cboSize.NewIndex) = iSize
+        cboSizeY.AddItem iSize & "Pix"
+        cboSizeY.ItemData(cboSizeY.NewIndex) = iSize
+    Next iSize
+    
+    For iColor = 0 To eMatrixColor.Blue
+        cboForeColor.AddItem ReturnColorName(iColor)
+        cboForeColor.ItemData(cboForeColor.NewIndex) = iColor
+        cboBackColor.AddItem ReturnColorName(iColor)
+        cboBackColor.ItemData(cboBackColor.NewIndex) = iColor
+        cboDisplayBackColor.AddItem ReturnColorName(iColor)
+        cboDisplayBackColor.ItemData(cboDisplayBackColor.NewIndex) = iColor
+    Next iColor
+    
+    cboFont.ListIndex = SelectedControls(0).MtxFont
+    cboSize.ListIndex = SelectedControls(0).MtxDotWidth - 1
+    cboSizeY.ListIndex = SelectedControls(0).MtxDotHeight - 1
+    
+    cboForeColor.ListIndex = SelectedControls(0).MtxForeColor
+    color = ReturnColor(cboForeColor.ItemData(cboForeColor.ListIndex))
+    For i = 0 To PicDotsON.Count - 1
+        PicDotsON(i).BackColor = color
+    Next i
+    cboBackColor.ListIndex = SelectedControls(0).MtxBackColor
+    color = ReturnColor(cboBackColor.ItemData(cboBackColor.ListIndex))
+    For i = 0 To PicDotsOFF.Count - 1
+        PicDotsOFF(i).BackColor = color
+    Next i
+    
+    cboDisplayBackColor.ListIndex = SelectedControls(0).MtxDisplayBackColor
+    color = ReturnColor(cboDisplayBackColor.ItemData(cboDisplayBackColor.ListIndex))
+    lblDisplayBackColor.BackColor = color
+    
+    If SelectedControls(0).MtxAutoAjustHeight = True Then
+        chkAutoHeight.Value = vbChecked
+    Else
+        chkAutoHeight.Value = vbUnchecked
+    End If
+    Changed = False
+    
+    cboFont.DataChanged = False
+    cboSize.DataChanged = False
+    cboSizeY.DataChanged = False
+    cboForeColor.DataChanged = False
+    cboBackColor.DataChanged = False
+    cboDisplayBackColor.DataChanged = False
+    chkAutoHeight.DataChanged = False
+End Sub
